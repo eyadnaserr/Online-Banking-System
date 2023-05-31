@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Credit Cards Log</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- side bar here -->
+        
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-building-columns"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">MoneyVault</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" href="./dashboard_user.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+    </li>
+
+
+<hr class="sidebar-divider">
+
+<!-- Heading -->
+<div class="sidebar-heading">
+    Financial
+</div>
+
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePayment" aria-expanded="true"
+        aria-controls="collapsePayment">
+        <i class="fas fa-fw fa-cart-plus"></i>
+        <span>Payment</span>
+    </a>
+    <div id="collapsePayment" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Choose:</h6>
+            <a class="collapse-item" href="./transfer.html">Transfer Money</a>
+            <a class="collapse-item" href="./payment.html">Pay Bills</a>
+        </div>
+    </div>
+</li>
+
+
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseApply" aria-expanded="true"
+        aria-controls="collapseApply">
+        <i class="fas fa-fw fa-wallet"></i>
+        <span>Pay Debt</span>
+    </a>
+    <div id="collapseApply" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Choose:</h6>
+            <a class="collapse-item" href="./credit_debt.html">Credit</a>
+            <a class="collapse-item" href="./loan_debt.html">Loan</a>
+        </div>
+    </div>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="./redeempts.html">
+        <i class="fas fa-fw fa-coins"></i>
+        <span>Redeem Points</span>
+    </a>
+</li>
+
+
+    <hr class="sidebar-divider">
+    
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Logs
+    </div>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTransactions"
+            aria-expanded="true" aria-controls="collapseTransactions">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Transactions</span>
+        </a>
+        <div id="collapseTransactions" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Choose:</h6>
+                <a class="collapse-item" href="./history_account.html">Account Transactions</a>
+                <a class="collapse-item" href="./history_card.html">Card Transactions</a>
+            </div>
+        </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseApplications"
+            aria-expanded="true" aria-controls="collapseApplications">
+            <i class="fas fa-fw fa-book"></i>
+            <span>Applications</span>
+        </a>
+        <div id="collapseApplications" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Choose:</h6>
+                <a class="collapse-item" href="./history_loans.html">Loan Applications</a>
+                <a class="collapse-item" href="./history_card_applications.html">Card Applications</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Divider -->
+    
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Application
+    </div>
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDebt"
+            aria-expanded="true" aria-controls="collapseDebt">
+            <i class="fas fa-fw fa-file-signature"></i>
+            <span>Apply For</span>
+        </a>
+        <div id="collapseDebt" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Choose:</h6>
+                <a class="collapse-item" href="./apply_card.html">Credit Card</a>
+                <a class="collapse-item" href="./apply_loan.html">Loan</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+    
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Other
+    </div>
+    <!-- Nav Item - History -->
+    <li class="nav-item">
+        <a class="nav-link" href="./report.html">
+            <i class="fas fa-fw fa-headset"></i>
+            <span>Support</span>
+        </a>
+    </li>
+
+
+</ul>
+<!-- End of Sidebar -->
+
+        
+
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- top bar here -->
+ <!-- Topbar -->
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+    <!-- Navbar - Brand -->
+    <a class="navbar-brand d-flex align-items-center justify-content-center">
+        <div class="navbar-brand-text mt-2 ml-2 text-primary font-weight-bold h2">
+            <label id="page">Dashboard</label>
+        </div>
+    </a>
+    
+    <!-- Divider -->
+    <hr class="navbar-divider my-0">
+
+
+    <!-- Topbar Navbar -->
+    <ul class="navbar-nav ml-auto">
+
+    
+        <!-- Nav Item - Alerts -->
+        <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-bell fa-1x25 fa-fw"></i>
+                <!-- Counter - Alerts -->
+                <span class="badge badge-danger badge-counter">3+</span>
+            </a>
+            <!-- Dropdown - Alerts -->
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                    Alerts Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                        <div class="icon-circle bg-primary">
+                            <i class="fas fa-file-alt text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="small text-gray-500">May 29, 2023</div>
+                        <span class="font-weight-bold">This is a reminder for your monthly loan payment!</span>
+                    </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                        <div class="icon-circle bg-success">
+                            <i class="fas fa-donate text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="small text-gray-500">December 7, 2023</div>
+                        $290.29 has been deposited into your account!
+                    </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-3">
+                        <div class="icon-circle bg-warning">
+                            <i class="fas fa-exclamation-triangle text-white"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="small text-gray-500">December 2, 2019</div>
+                        Spending Alert: We've noticed unusually high spending for your account.
+                    </div>
+                </a>
+            </div>
+        </li>
+
+
+        <div class="topbar-divider d-none d-sm-block"></div>
+
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">John Doe</span>
+                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+            </a>
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="./profile.html">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                </a>
+                <a class="dropdown-item" href="./account.html">
+                    <i class="fas fa-building-columns fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Account
+                </a>
+                <a class="dropdown-item" href="./notifications.html">
+                    <i class="fas fa-envelope fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Notifications
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="./change_password.html">
+                    <i class="fas fa-lock fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Change Password
+                </a>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Logout
+                </a>
+            </div>
+        </li>
+
+    </ul>
+
+</nav>
+<!-- End of Topbar -->
+
+                
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-2">
+                        <div class="card-header py-3">
+                            <a href="dashboard_user.html" class="btn btn-primary">
+                                <i class="fas fa-arrow-left"></i>
+                                Back to Dashboard
+                            </a>
+                            <div class="form-group mt-4">
+                                <select class="form-control" id="categorySelect">
+                                    <option value="">Select a Card</option>
+                                    <option value="category1">************5367</option>
+                                    <option value="category2">************4826</option>
+                                    <option value="category1">************1215</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Type</th>
+                                            <th>Place</th>
+                                            <th>Date</th>
+                                            <th>Amount</th>
+                                            <th>Balance</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>Deposit</td>
+                                            <td>Cairo, Giza</td>
+                                            <td>2012/03/29</td>
+                                            <td>$4,060</td>
+                                            <td>$42,060</td>
+                                            <td style="color:green">Accepted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>33</td>
+                                            <td>Deposit</td>
+                                            <td>Alexandria, Stanley Bridge</td>
+                                            <td>2008/11/28</td>
+                                            <td>$1,700</td>
+                                            <td>$12,700</td>
+                                            <td style="color:green">Accepted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>30</td>
+                                            <td>Withdraw</td>
+                                            <td>Germany, Berlin</td>
+                                            <td>2008/12/19</td>
+                                            <td>$560</td>
+                                            <td>$9,560</td>
+                                            <td style="color:green">Accepted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Deposit</td>
+                                            <td>Sakha</td>
+                                            <td>2013/03/03</td>
+                                            <td>$4,000</td>
+                                            <td>$32,000</td>
+                                            <td style="color:green">Accepted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>36</td>
+                                            <td>Withdraw</td>
+                                            <td>Cairo, El-Rehab</td>
+                                            <td>2008/10/16</td>
+                                            <td>$7,600</td>
+                                            <td>$40,600</td>
+                                            <td style="color:green">Accepted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>43</td>
+                                            <td>Withdraw</td>
+                                            <td>Cairo, Third Settlement</td>
+                                            <td>2012/12/18</td>
+                                            <td>$3,500</td>
+                                            <td>$33,500</td>
+                                            <td style="color:red">Rejected</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>Deposit</td>
+                                            <td>UK, Manchester</td>
+                                            <td>2010/03/17</td>
+                                            <td>$5,750</td>
+                                            <td>$85,750</td>
+                                            <td style="color:green">Accepted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>38</td>
+                                            <td>Withdraw</td>
+                                            <td>Saudi Arabia, Jeddah</td>
+                                            <td>2011/05/03</td>
+                                            <td>$1,500</td>
+                                            <td>$13,500</td>
+                                            <td style="color:red">Rejected</td>
+                                        </tr>
+                                        <tr>
+                                            <td>56</td>
+                                            <td>Deposit</td>
+                                            <td>Tureky, Istanbul</td>
+                                            <td>2012/06/01</td>
+                                            <td>$1,000</td>
+                                            <td>$15,000</td>
+                                            <td style="color:red">Rejected</td>
+                                        </tr>
+                                        <tr>
+                                            <td>46</td>
+                                            <td>Deposit</td>
+                                            <td>Japan, Osaka</td>
+                                            <td>2011/12/06</td>
+                                            <td>$5,600</td>
+                                            <td>$45,600</td>
+                                            <td style="color:green">Accepted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>47</td>
+                                            <td>Deposit</td>
+                                            <td>The Maldives</td>
+                                            <td>2011/03/21</td>
+                                            <td>$3,250</td>
+                                            <td>$36,250</td>
+                                            <td style="color:green">Accepted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>Withdraw</td>
+                                            <td>India, Delhi</td>
+                                            <td>2009/02/27</td>
+                                            <td>$3,500</td>
+                                            <td>$13,500</td>
+                                            <td style="color:red">Rejected</td>
+                                        </tr>
+                                        <tr>
+                                            <td>37</td>
+                                            <td>Withdraw</td>
+                                            <td>Russia, Saray Al-Jadid</td>
+                                            <td>2010/07/14</td>
+                                            <td>$8,500</td>
+                                            <td>$6,500</td>
+                                            <td style="color:green">Accepted</td>
+                                        </tr>
+                                        <tr>
+                                            <td>51</td>
+                                            <td>Withdraw</td>
+                                            <td>Brazil, Reo de Janiro</td>
+                                            <td>2008/11/13</td>
+                                            <td>$1,000</td>
+                                            <td>$83,000</td>
+                                            <td style="color:red">Rejected</td>
+                                        </tr>
+                                        <tr>
+                                            <td>29</td>
+                                            <td>Deposit</td>
+                                            <td>USA, Hawai</td>
+                                            <td>2011/06/27</td>
+                                            <td>$1,000</td>
+                                            <td>$103,000</td>
+                                            <td style="color:red">Rejected</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2020</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+
+    <script>
+    document.getElementById('page').innerText = document.querySelector('title').text;
+    // remove activity log if not user
+</script>
+
+
+
+</body>
+
+</html>
